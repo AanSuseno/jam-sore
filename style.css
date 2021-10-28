@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	position: absolute;
+}
+
+body {
+	height: 90vh;
+	width: 100vw;
+	background: #eee;
+}
+
+:root{
+	--sun: #f7fd04;
+	--sea: linear-gradient(to bottom, #f9b208, #2A32CA);
+	--kapal: #72147e;
+}
+
+#canvas, #waktu {
+	height: 60vmin;
+	width: 80vmin;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 5vmin;
+	overflow: hidden;
+	background: linear-gradient(to bottom, #1b1a17, #fc5404, #f98404);
+}
+
+#sun {
+	width: 15vmin;
+	height: 15vmin;
+	background: var(--sun);
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#sea {
+	width: 100%;
+	height: 45%;
+	background: var(--sea);
+	bottom: 0;
+}
+
+.pantulan {
+	height: 3vmin;
+	width: 20vmin;
+	background: var(--sun);
+	border-radius: 1.5vmin;
+	left: 29vmin;
+	top: 33vmin;
+	opacity: 0.7;
+}
+
+#p2 {
+	left: 23vmin;
+	top: 36vmin;
+	width: 25vmin;
+}
+
+#p3 {
+	left: 20vmin;
+	top: 39vmin;
+	width: 33vmin;
+}
+
+#p4 {
+	left: 22vmin;
+	top: 42vmin;
+	width: 35vmin;
+}
+
+#p5 {
+	left: 12vmin;
+	top: 45vmin;
+	width: 50vmin;
+}
+
+#kapal {
+	width: 9vmin;
+	height: 3vmin;
+	background: var(--kapal);
+	border-radius: 0 0 3vmin 3vmin;
+	right: 5vmin;
+	bottom: 20vmin;
+}
+
+#layar {
+	height: 0;
+	width: 0;
+	border: 20vmin solid rgba(0,0,0,0);
+	border-left-color: var(--kapal);
+	border-width: 4vmin 7vmin;
+	right: -4vmin;
+	bottom: 24vmin;
+}
+
+#waktu {
+	background: #333;
+	opacity: 0;
+}
+
+#waktu:hover {
+	opacity: 0.4;
+}
+
+.time {
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	font-size: 10vmin;;
+}
+
+p span {
+	position: relative;
+}
